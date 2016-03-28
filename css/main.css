@@ -23,11 +23,11 @@ body {
 
 header {
   background-color: #18294f;
-  color: #6c8fe0;
-  overflow: auto;
+  color: #fff;
+  overflow: hidden;
 }
 
-h1 {
+header h1 {
   color: #fff;
   margin: auto;
   text-align: center;
@@ -35,9 +35,10 @@ h1 {
   font-size: 2rem;
 }
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
+  font-size: 1.125rem;
 }
 
 li {
@@ -45,10 +46,15 @@ li {
   padding: .7em 0 .7em 1em;
 }
 
-a {
+nav a {
   text-decoration: none;
-  font-size: 1.125rem;
   color: #6c8fe0;
+  white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
@@ -59,20 +65,21 @@ a {
   }
 
   html {
-    font-size: 110%
+    font-size: 110%;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-li {
-  width: 25%;
-}
+  li {
+    width: 25%;
+  }
 
-html {
-  font-size: 120%
-}
+  html {
+    font-size: 120%;
+    line-height: 1.4;
+  }
 
 }
 
@@ -93,7 +100,8 @@ html {
   }
 
   html {
-    font-size: 120%
+    font-size: 120%;
+    line-height: 1.5;
   }
 
 }
